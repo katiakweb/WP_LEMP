@@ -92,6 +92,8 @@ clear;
 
 echo "127.0.0.1 $dname" | sudo tee -a /etc/hosts > /dev/null;
 
+#restart nginx server
+sudo systemctl restart nginx.service > /dev/null;
 echo "Thank you for choosing us for wordpress installation, Installation is compleate. ";
 printf "${RED}*******************************************${NC}";
 echo "";
